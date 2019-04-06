@@ -3,22 +3,28 @@
 Install the dependencies.
 
 ```sh
-$ sudo apt update
-$ sudo apt install flex bison
+$ sudo apt-get update
+$ sudo apt-get install flex bison
 ```
 
 ### Get repository
 
 Get this repository.
 ```sh
-$ git clone https://github.com/vpai8/cppparser.git
+$ git clone https://github.com/VPai8/cpp-parser.git
 ```
 ### Execution
 
 Type code to parse in input.txt.
 
 ```sh
-$ cd parser
+$ cd cpp-parser
+$ touch input.txt
+$ cat > input.txt
+```
+Parse.
+
+```sh
 $ flex test.l && bison -d test.y
 $ gcc lex.yy.c test.tab.c
 $ ./a.out
