@@ -221,7 +221,7 @@ mulop : MUL
 %%
 void main()
 {
-	yyin = fopen("in.txt","r");
+	yyin = fopen("input.txt","r");
 	do{
 		if(yyparse()){
 			exit(0);
