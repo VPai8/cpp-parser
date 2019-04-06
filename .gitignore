@@ -3,4 +3,4 @@
 *.h
 *.out
 .vscode
-.output
+*.output
